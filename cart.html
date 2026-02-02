@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина | IT-Universe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #05060a;
+            --surface: #0b0e14;
+            --accent: #00e0ff;
+            --text: #e0f0ff;
+            --text-muted: #8b9db0;
+            --border: rgba(0,224,255,0.12);
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        header {
+            height: 80px;
+            padding: 0 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(5,6,10,0.92);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo-text {
+            font-family: 'Orbitron';
+            font-size: 1.8rem;
+            font-weight: 900;
+            background: linear-gradient(90deg, #fff, var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 100px auto 40px;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-family: 'Orbitron';
+            font-size: 2.8rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .cart-empty {
+            text-align: center;
+            font-size: 1.4rem;
+            color: var(--text-muted);
+            margin-top: 100px;
+        }
+
+        .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--surface);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .cart-table th, .cart-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .cart-table th {
+            background: rgba(0,224,255,0.1);
+            font-family: 'Orbitron';
+            font-size: 1.1rem;
+        }
+
+        .cart-item-img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .qty-btn {
+            width: 32px;
+            height: 32px;
+            background: rgba(0,224,255,0.2);
+            border: none;
+            border-radius: 8px;
+            color: var(--accent);
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .qty-btn:hover {
+            background: var(--accent);
+            color: #000;
+        }
+
+        .qty-display {
+            width: 50px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .remove-btn {
+            background: #ff4444;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .total {
+            margin-top: 40px;
+            text-align: right;
+            font-size: 1.8rem;
+            font-family: 'Orbitron';
+        }
+
+        .total span {
+            color: var(--accent);
+        }
+    </style>
+</head>
+
+</body>
+</html>
